@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project one html5+css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+ <span>NewProject</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Изучение" onclick="slowScroll('#main')">Изучение</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Программирование</h1>
+    <h3>увлекательно и познавательно!</h3>
+  </div>
+
+    <div id="main">
+      <div class="intro">
+        <h2>30% Теории и 70% Практики</h2>
+        <span>Таким методом стараюсь учить frontend разработку</span>
+      </div>
+      <div class="text">
+        <span>
+          В начале я начал изучать язык разметки HTML, после пропустив CSS перешел к изучению JavaScript, но столкнувшись с работой с дум деревом понял, что
+          необходимо все таки выучить и язык разметки, вот теперь почитав теорию, по примерам из ютуба стараюсь нарабатывать на практике навыки по верстке
+          шаблонов как этот к примеру. Нет сам я этот шаблон не придумал, делаю по видеоуроку, тем самым запоминая правильность написания кода а так же основные 
+          элементы css.
+        </span>
+      </div>
+  </div>
+
+  <div id="overview">
+      <h2>Преймущества</h2>
+      <h4>Изучение по шагам</h4>
+
+      <div class="img">
+        <img src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw" alt="">
+        <span>Изучение HTML языка разметки</span>
+      </div>
+      <div class="img">
+        <img src="https://gbcdn.mrgcdn.ru/uploads/geekbrains/public/ckeditor_assets/pictures/8975/retina-5df8bc110901350173f8be719ce2ea1d.png" alt="">
+        <span>Изучение CSS языка стилей</span>
+      </div>
+      <div class="img">
+        <img src="https://astwellsoft.com/assets/images/blog/xjavascript.jpg.pagespeed.ic.08u3EZ_AsW.jpg" alt="">
+        <span>Изучение JavaScript языка логики</span>
+      </div>
+      <div class="img">
+        <img src="https://wp.sitepen.com/wp-content/uploads/2017/08/Wrapping-Web-Components-With-React.jpg" alt="">
+        <span>Работа в React</span>
+      </div>
+  </div>
+
+  <div id="contacts">
+      <center><h5>Обратная связь</h5></center>
+      <form id="form_input">
+        <label for="name">Имя <span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта <span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="massege">Сообщение <span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="messege" id="messedge"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+      </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">HTML</span><br>
+      <span class="heading">Что такое HTML?</span>
+      <p>HTML — стандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц
+         в браузере. Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают
+         с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора.</p>
+      <span class="heading">Для чего нужна технология HTML?</span>
+      <p>HTML (от английского HyperText Markup Language) — это язык гипертекстовой разметки текста.
+         Он нужен, чтобы размещать на веб-странице элементы: текст, картинки, таблицы и видео. Когда вы 
+         заходите на сайт, браузер подгружает HTML-файл с информацией о структуре и контенте веб-страницы.</p>
+      <span class="heading">Кто использует HTML?</span>
+      <p>HTML и CSS — языки гипертекстовой разметки и описания стилей соответственно; специалиста по
+         HTML/CSS в русскоязычной среде чаще всего называют верстальщиком; язык гипертекстовой разметки и
+         описания стилей также используют в работе веб-разработчики и дизайнеры-верстальщики.</p>
+    </div>
+    <div>
+      <span class="title">CSS</span><br>
+      <span class="heading">Что такое CSS?</span>
+      <p>CSS — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.</p>
+      <span class="heading">Для чего нужен CSS в HTML? </span>
+      <p>CSS — язык описания стилей. Аббревиатура образовалась из первых букв английских слов
+         Cascading Style Sheets — каскадные таблицы стилей. CSS описывает внешний вид HTML-элементов.
+          То есть разработчики с помощью каскадных таблиц стилей определяют, как должен выглядеть тот 
+          или иной элемент на странице.</p>
+      <span class="heading">В чем разница между HTML и CSS?</span>
+      <p>CSS - это каскадные таблицы стилей. Этот язык разметки определяет, как HTML-элементы веб-сайта
+         должны отображаться на интерфейсе страницы. Если HTML - это гипсокартон, CSS - это краска.
+          В то время как HTML является основной структурой вашего сайта, CSS - это то, что дает всему вашему сайту стиль</p>
+    </div>
+    <div>
+      <span class="title">JavaScript</span><br>
+      <span class="heading">Что такое JavaScript?</span>
+      <p>JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный 
+        и функциональный стили. Является реализацией спецификации ECMAScript. JavaScript обычно используется как
+         встраиваемый язык для программного доступа к объектам приложений.</p>
+      <span class="heading">Для чего используют JavaScript?</span>
+      <p>JavaScript — это язык программирования, который используют для написания frontend- и backend-частей сайтов, а также мобильных приложений.</p>
+      <span class="heading">Что можно сделать с помощью JavaScript?</span>
+      <p>Язык программирования JavaScript придумали специально для того, чтобы создавать интерактивные сайты. 
+        Такие сайты реагируют на ваши действия: добавляют лайк, когда вы нажимаете на «сердечко»; загружают новые 
+        посты в ленту, когда вы доходите до конца страницы; показывают оповещения о новом сообщении или письме.</p>
+    </div>
+
+
+
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      function slowScroll(id) {
+        $('html, body').animate({
+          scrollTop: $(id).offset().top
+        }, 500);
+      }
+  
+      $(document).on("scroll", function () {
+        if($(window).scrollTop() === 0)
+          $("header").removeClass("fixed");
+        else
+          $("header").attr("class", "fixed");
+      });
+    </script>
+
+
+
+
+<!-- https://www.youtube.com/watch?v=bTabgnRgD3A
+   -->
+
+
+</body>
+</html>
